@@ -1,2 +1,16 @@
-@import 'theme';
-@import 'icons.scss';
+@import 'mixins';
+@import 'variables';
+@import 'base';
+@import 'modules';
+@import 'layout';
+
+@import '~@angular/material/theming';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import 'icons';
+
+@include mat-core();
+
+
+
+

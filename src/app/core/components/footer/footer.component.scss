@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'mixins';
+@import 'modules';
+
+.footer {
+    @include toolbar-font(25px, 130px, 0px, 600);
+  
+}
+
+.example-spacer {
+  @include toolbar-font(10px, 130px, 0px, 500);
+  
+}
+.footer-center {
+  color: $font-color;
+}
+
+.example-icon {
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+
+  
+

@@ -1,14 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './features/home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatListModule, MatCardModule } from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent
+  
   ],
   imports: [
     AppRoutingModule,
@@ -16,6 +24,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     CoreModule,
     HomeModule,
+    MatIconModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatCardModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

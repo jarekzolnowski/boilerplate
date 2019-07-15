@@ -1,24 +1,64 @@
-<button mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
-<mat-menu #aboveMenu="matMenu" yPosition="above">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
 
-<button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+<!--Boilerplate alert developer modeeee.-->
+<mat-toolbar class="menu"  color="primary" >
+  <mat-toolbar-row >
+    <mat-menu #appMenu="matMenu" >
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
 
-<button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
-<mat-menu #beforeMenu="matMenu" xPosition="before">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+    <button mat-button [matMenuTriggerFor]="appMenu"  >
+        <mat-icon class="example-icon">developer_mode</mat-icon>
+        <span>Material</span>
+    </button>
+    <button mat-button [matMenuTriggerFor]="appMenu">Components</button>
+    <button mat-button [matMenuTriggerFor]="appMenu">CDK</button>
+    <button mat-button [matMenuTriggerFor]="appMenu">Guides</button>
+    
+    <mat-menu #arrMenu="matMenu">
+        <button mat-menu-item>yyyyy</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+
+     
+    <span class="example-spacer"></span>
+    <button mat-button class="example-icon" [matMenuTriggerFor]="arrMenu">
+        <mat-menu #arrMenu="matMenu">
+            <button mat-menu-item>5.2.5</button>
+            <button mat-menu-item>6.4.7</button>
+            <button mat-menu-item>7.3.7</button>
+            <button mat-menu-item>8.0.1</button>
+          </mat-menu>
+          <span>8.0.2</span>
+    </button>
+    <mat-icon class="example-icon" [matMenuTriggerFor]="arrMenu">
+        <mat-menu #arrMenu="matMenu">
+            <button mat-menu-item>5.2.5</button>
+            <button mat-menu-item>6.4.7</button>
+            <button mat-menu-item>7.3.7</button>
+            <button mat-menu-item>8.0.1</button>
+          </mat-menu>
+      opacity</mat-icon>
+    
+      <button mat-button>
+        <mat-icon class="example-icon">delete</mat-icon>
+      <span>GitHub</span>
+    </button>
 
 
-<button mat-button [matMenuTriggerFor]="afterMenu">After</button>
-<mat-menu #afterMenu="matMenu" xPosition="after">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+</mat-toolbar-row>
+
+</mat-toolbar>
+
+<mat-toolbar color="primary" class="toolbar">
+  <mat-toolbar-row>
+    <span>Home</span>
+    <span class="example-spacer"></span>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    
+  </mat-toolbar-row>
+
+</mat-toolbar>
