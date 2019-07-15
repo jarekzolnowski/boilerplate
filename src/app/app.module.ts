@@ -8,7 +8,8 @@ import { HomeModule } from './features/home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatListModule, MatCardModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
-import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTreeModule} from '@angular/material/tree';
+
 
 
 
@@ -31,7 +32,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatExpansionModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
