@@ -1,23 +1,51 @@
 
-<p>home works!</p>
+<mat-tab-group fxFlex="80" fxFlex="column no-wrap"  animationDuration="0ms">
+  <mat-tab label="OVERVIEW">
+    <mat-card  class="example-card" >
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </mat-tab>
+  <mat-tab label="API"></mat-tab>
+  <mat-tab label="EXAMPLES"></mat-tab>
+</mat-tab-group>
 
 
-<mat-card class="example-card" fxFlex="60">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
+
+
+<mat-card fxFlex="20">
+
+  <mat-card-content fxHide.md="true" fxHide.sm="true" fxHide.xs="true">
+    <mat-list role="list">
+      <mat-list-item role="listitem">Contents</mat-list-item>
+      <mat-list-item role="listitem">Simple lists</mat-list-item>
+      <mat-list-item role="listitem">Navigation lists</mat-list-item>
+      <mat-list-item role="listitem">Action lists</mat-list-item>
+      <mat-list-item role="listitem">Section lists</mat-list-item>
+      <mat-list-item role="listitem">Multi-line lists</mat-list-item>
+      <mat-list-item role="listitem">List with icons</mat-list-item>
+      <mat-list-item role="listitem">List with avatars</mat-list-item>
+      <mat-list-item role="listitem">Dense lists</mat-list-item>
+      <mat-list-item role="listitem">Accesibility</mat-list-item>
+      
+    </mat-list>
+    
+  </mat-card-content>
+</mat-card>
+

@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'mixins';
-@import 'modules';
+@import 'layout';
 
 .footer {
     @include toolbar-font(25px, 130px, 0px, 600);
