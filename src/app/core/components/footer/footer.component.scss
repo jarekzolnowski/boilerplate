@@ -1,15 +1,15 @@
-@import 'variables';
-@import 'mixins';
-@import 'layout';
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/layout';
 
 .footer {
     @include toolbar-font(25px, 130px, 0px, 600);
-  
+
 }
 
 .example-spacer {
   @include toolbar-font(10px, 130px, 0px, 500);
-  
+
 }
 .footer-center {
   color: $font-color;
@@ -23,5 +23,5 @@
 
 
 
-  
+
 

@@ -13,4 +13,5 @@ import { SharedModule } from '../../shared';
   ]
 })
 export class HomeModule {
+  links =["http://google.com"];
 }

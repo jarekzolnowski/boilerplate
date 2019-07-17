@@ -1,29 +1,124 @@
 
-<mat-tab-group fxFlex="80" fxFlex="column no-wrap"  animationDuration="0ms">
+<mat-tab-group fxFlex="80"  fxLayout="column no-wrap"  animationDuration="0ms">
   <mat-tab label="OVERVIEW">
-    <mat-card  class="example-card" >
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
-      
-      <mat-card-content>
+    <mat-card  class="example-card" fxFlex="1 1 auto" fxLayout="column wrap">
+
+
+      <mat-card-content fxFlex="1 1 auto" fxLayoutAlign="start center">
         <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
+          <i>mat-card</i> is a content container for text, photos, and actions in the context of a single subject.
         </p>
       </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
+
+      <mat-card class="example-card1" fxFlex="1 1 auto">
+        <mat-card-header >
+          <mat-card-title class="header">Basic cards</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+          <mat-card>Simple card</mat-card>
+        </mat-card-content>
+      </mat-card>
+
+
+
+      <mat-card-header >
+        <mat-card-title class="title-paragraph" >Basic cards</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content fxFlex="1 1 auto">
+        <p>
+          Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden,
+          utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
+        </p>
+      </mat-card-content>
+
+
     </mat-card>
 
   </mat-tab>
-  <mat-tab label="API"></mat-tab>
-  <mat-tab label="EXAMPLES"></mat-tab>
+  <mat-tab label="API">
+
+    <mat-card  class="example-card" fxFlex="1 1 auto" fxLayout="column wrap">
+
+
+      <mat-card-header >
+        <mat-card-title class="title-paragraph">API reference for Angular Material card</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content fxFlex="1 1 auto">
+        <p>
+          The most basic card needs only an <i>mat-card</i> element with some content. However, Angular Material provides a number of preset sections that you can use inside of an <i>mat-card</i>
+        </p>
+
+        <mat-card-header >
+          <mat-card-title class="title-paragraph">Directives
+            <mat-divider></mat-divider>
+          </mat-card-title>
+        </mat-card-header>
+
+        <mat-card-title class="title-paragraph" [ngStyle.xs]="{'font-weight':'900'}" >MatCard
+        </mat-card-title>
+
+        <p>
+          A basic content container component that adds the styles of a Material design card.
+
+          While this component can be used alone, it also provides a number of preset styles for common card sections, including:
+        </p>
+          <ul>
+            <li>mat-card-title</li>
+            <li>mat-card-subtitle</li>
+            <li>mat-card-content</li>
+            <li>mat-card-actions</li>
+            <li>mat-card-footer</li>
+          </ul>
+          Selector: mat-card
+
+          Exported as: matCard
+
+
+
+        <p>
+          The most basic card needs only an <i>mat-card</i> element with some content. However, Angular Material provides a number of preset sections that you can use inside of an <i>mat-card</i>
+        </p>
+      </mat-card-content>
+
+
+    </mat-card>
+
+
+  </mat-tab>
+  <mat-tab label="EXAMPLES">
+
+    <mat-card class="example-card1" fxFlex="1 1 auto">
+      <mat-card-header class="header1">
+        <mat-card-title class="header1">Basic cards</mat-card-title>
+      </mat-card-header>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </mat-card>
+
+
+  </mat-tab>
 </mat-tab-group>
 
 
@@ -33,7 +128,10 @@
 
   <mat-card-content fxHide.md="true" fxHide.sm="true" fxHide.xs="true">
     <mat-list role="list">
-      <mat-list-item role="listitem">Contents</mat-list-item>
+      <mat-list-item role="listitem">
+
+
+        Contents</mat-list-item>
       <mat-list-item role="listitem">Simple lists</mat-list-item>
       <mat-list-item role="listitem">Navigation lists</mat-list-item>
       <mat-list-item role="listitem">Action lists</mat-list-item>
@@ -43,9 +141,9 @@
       <mat-list-item role="listitem">List with avatars</mat-list-item>
       <mat-list-item role="listitem">Dense lists</mat-list-item>
       <mat-list-item role="listitem">Accesibility</mat-list-item>
-      
+
     </mat-list>
-    
+
   </mat-card-content>
 </mat-card>
 

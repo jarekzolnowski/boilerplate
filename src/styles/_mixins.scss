@@ -7,7 +7,9 @@
     font-weight: $font;
 }
 
-@mixin toolbar-module () {
 
+@mixin header ($color, $padding, $margin) {
+  background-color: $color;
+  padding: $padding;
+  margin-bottom: $margin;
 }
-

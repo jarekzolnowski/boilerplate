@@ -12,17 +12,17 @@
         <span>Material</span>
     </button>
     <button mat-button [matMenuTriggerFor]="appMenu">Components</button>
-    <button mat-button [matMenuTriggerFor]="appMenu">CDK</button>
-    <button mat-button [matMenuTriggerFor]="appMenu">Guides</button>
-    
+    <button mat-button [matMenuTriggerFor]="appMenu" fxHide.md="true" fxHide.sm="true" fxHide.xs="true">CDK</button>
+    <button mat-button [matMenuTriggerFor]="appMenu" fxHide.md="true" fxHide.sm="true" fxHide.xs="true">Guides</button>
+
     <mat-menu #arrMenu="matMenu">
         <button mat-menu-item>yyyyy</button>
         <button mat-menu-item>Item 2</button>
       </mat-menu>
 
-     
-    <span class="example-spacer"></span>
-    <button mat-button class="example-icon" [matMenuTriggerFor]="arrMenu">
+
+    <span class="example-spacer" ></span>
+    <button mat-button class="example-icon" [matMenuTriggerFor]="arrMenu" fxHide.md="true" fxHide.sm="true" fxHide.xs="true">
         <mat-menu #arrMenu="matMenu">
             <button mat-menu-item>5.2.5</button>
             <button mat-menu-item>6.4.7</button>
@@ -31,7 +31,7 @@
           </mat-menu>
           <span>8.0.2</span>
     </button>
-    <mat-icon class="example-icon" [matMenuTriggerFor]="arrMenu">
+    <mat-icon class="example-icon" [matMenuTriggerFor]="arrMenu" fxHide.md="true" fxHide.sm="true" fxHide.xs="true">
         <mat-menu #arrMenu="matMenu">
             <button mat-menu-item>5.2.5</button>
             <button mat-menu-item>6.4.7</button>
@@ -39,10 +39,10 @@
             <button mat-menu-item>8.0.1</button>
           </mat-menu>
       opacity</mat-icon>
-    
+
       <button mat-button>
-        <mat-icon class="example-icon">delete</mat-icon>
-      <span>GitHub</span>
+        <mat-icon class="example-icon" fxHide.md="true" fxHide.sm="true" fxHide.xs="true">delete</mat-icon>
+      <span fxHide.md="true" fxHide.sm="true" fxHide.xs="true">GitHub</span>
     </button>
 
 
@@ -50,7 +50,7 @@
 
 </mat-toolbar>
 
-<mat-toolbar color="primary" class="toolbar">
+<mat-toolbar color="primary" class="toolbar" fxHide.md="true" fxHide.sm="true" fxHide.xs="true" >
   <mat-toolbar-row>
     <span>Home</span>
     <span class="example-spacer"></span>
@@ -58,7 +58,7 @@
       <button mat-menu-item>Item 1</button>
       <button mat-menu-item>Item 2</button>
     </mat-menu>
-    
+
   </mat-toolbar-row>
 
 </mat-toolbar>
