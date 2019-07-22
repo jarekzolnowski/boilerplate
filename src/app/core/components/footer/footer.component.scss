@@ -1,3 +1,4 @@
+// TODO: brak wydzielenia SMACSS
 @import '../styles/variables';
 @import '../styles/mixins';
 @import '../styles/layout';
@@ -11,6 +12,8 @@
   @include toolbar-font(10px, 130px, 0px, 500);
 
 }
+
+// TODO: klasa center powinna mieć coś wspólnego z centrowaniem. Tutaj widzę tylko styl dot. koloru. Czy footer-center jest klasa wbudowaną?
 .footer-center {
   color: $font-color;
 }

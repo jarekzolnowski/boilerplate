@@ -1,12 +1,10 @@
-
 @import '../styles/styles';
 @import '../styles/mixins';
 
-
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
 
 
 .example-card1 {
@@ -16,9 +14,7 @@
 
 .header1 {
   @include header(rgb(222, 220, 220),10px,20px);
-
 }
-
 
 .title-paragraph {
   font-size: 25px;
