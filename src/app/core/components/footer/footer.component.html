@@ -1,23 +1,19 @@
-<mat-toolbar  class="toolbar" color="primary" fxLayoutAlign="space-between center" fxLayoutAlign.sm="center center">
-    <mat-toolbar-row>
-      <button mat-button fxFlex="30" class="footer">
-          <mat-icon class="example-icon">developer_mode</mat-icon>
-          <span fxLayout.md="column wrap">Material</span>
-      </button>
+<mat-toolbar class="toolbar" color="primary" fxLayoutAlign="space-between center" fxLayoutAlign.sm="center center">
+  <mat-toolbar-row>
+    <button mat-button fxFlex="30" class="footer">
+      <mat-icon class="logo">developer_mode</mat-icon>
+        <span>Material</span>
+    </button>
 
-      <button mat-button class="footer-center footer" fxFlex="40"
-              [ngStyle.xs]="{'font-size':'12px'}" disabled>Current Version: 8.0.2</button>
+    <button mat-button class="footer" fxFlex="40" disabled>Current Version: 8.0.2</button>
 
-      <button mat-button class="toolbar example-spacer" fxFlex="1 1 auto" fxLayoutAlign="center end"  disabled>
-            <div class="toolbar">
+    <button mat-button  fxFlex fxLayoutAlign="center end" disabled>
+      <div>
               <!-- Użyć lt-lg zamiast osobno dla każdego z breakpointów -->
-            <span  fxLayout="row wrap" fxHide.md="true" fxHide.sm="true" fxHide.xs="true">Powered by Google &copy; 2010-2019.</span>
-            <a fxLayout="row wrap" fxHide.md="true" fxHide.sm="true" fxHide.xs="true"> Code licensed under an MIT-style License.</a>
-            <span fxLayout.md="column wrap" fxHide.md="true" fxHide.sm="true" fxHide.xs="true">Documentation licensed under CC BY 4.0.</span>
-          </div>
-      </button>
-
+        <span class="footer-right-text" fxLayout="row wrap" fxHide.lt-lg="true">Powered by Google &copy; 2010-2019.</span>
+          <a class="footer-right-text"  fxLayout="row wrap" fxHide.lt-lg="true"> Code licensed under an MIT-style License.</a>
+        <span class="footer-right-text" fxLayout.md="column wrap" fxHide.lt-lg="true">Documentation licensed under CC BY 4.0.</span>
+      </div>
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
-
-

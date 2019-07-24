@@ -1,14 +1,7 @@
-<!-- Te komentarze są zbędne -->
-<mat-tree fxFlex="60" fxLayout="column wrap"  fxHide.lt-md="true" fxFlex.lt-md="1 1 auto"  [dataSource]="dataSource" [treeControl]="treeControl" class="example-tree" >
-  <!-- This is the tree node template for leaf nodes -->
+<mat-tree fxFlex="60" fxLayout="column wrap" fxHide.lt-md="true" fxFlex [dataSource]="dataSource" [treeControl]="treeControl">
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
     <li class="mat-tree-node">
-      <!-- use a disabled button to provide padding for tree leaf -->
-
       <button mat-icon-button disabled></button>
       {{node.name}}
     </li>
   </mat-tree-node>
-  <!-- This is the tree node template for expandable nodes -->
-
-

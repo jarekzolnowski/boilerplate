@@ -43,7 +43,6 @@ interface ExampleFlatNode {
   level: number;
 }
 
-
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',

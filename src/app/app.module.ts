@@ -7,12 +7,9 @@ import { CoreModule } from './core/core.module';
 import { HomeModule } from './features/home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-
-      
 @NgModule({
   declarations: [
-    AppComponent  
+    AppComponent
   ],
   imports: [
     AppRoutingModule,
@@ -25,4 +22,3 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-

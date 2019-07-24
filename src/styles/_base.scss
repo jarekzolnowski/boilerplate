@@ -1,11 +1,9 @@
-// BASE STYLES zrobić z tego mixina
+@import 'variables';
 
-body {
-    font-family: Roboto, Arial, sans-serif;
-    font-size: 50px;
-    margin: 0;
-    background-color: white;
-    height: 100vh;
-
-  }
-
+body,html {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 40px;
+  margin: 0;
+  background-color: $white;
+  height: 100vh;
+}
