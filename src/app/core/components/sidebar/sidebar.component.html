@@ -1,3 +1,4 @@
+
 <mat-tree fxFlex="60" fxLayout="column wrap" fxHide.lt-md="true" fxFlex [dataSource]="dataSource" [treeControl]="treeControl">
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
     <li class="mat-tree-node">
@@ -5,3 +6,46 @@
       {{node.name}}
     </li>
   </mat-tree-node>
+</mat-tree>
+
+
+
+
+
+
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name">Responsive App</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container"
+                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+
+
+        <mat-tree fxFlex="60" fxLayout="column wrap" fxHide.lt-md="true" fxFlex [dataSource]="dataSource" [treeControl]="treeControl">
+          <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+            <li class="mat-tree-node">
+              <button mat-icon-button disabled></button>
+              {{node.name}}
+            </li>
+          </mat-tree-node>
+        </mat-tree>
+
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <p *ngFor="let content of fillerContent">{{content}}</p>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
