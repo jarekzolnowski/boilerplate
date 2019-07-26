@@ -1,0 +1,18 @@
+@import '../styles/mixins';
+@import '../styles/variables';
+
+@import '../styles/base';
+@import '../styles/layout';
+@import '../styles/components';
+
+.card-image {
+  @include image (url('https://material.angular.io/assets/img/examples/shiba1.jpg'), cover)
+}
+
+.title {
+  @include header ($white, 30px, 30px);
+}
+
+.card {
+  @include header ($gray, 70px, 30px);
+}

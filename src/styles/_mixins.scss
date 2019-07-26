@@ -12,3 +12,8 @@
   padding: $padding;
   margin-bottom: $margin;
 }
+
+@mixin image ($imageUrl, $size) {
+  background-image: $imageUrl;
+  background-size: $size;
+}

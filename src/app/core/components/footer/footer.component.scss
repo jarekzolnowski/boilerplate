@@ -1,2 +1,8 @@
-// TODO: brak wydzielenia SMACSS
-@import '../styles/styles';
+@import'../styles/mixins';
+@import'../styles/variables';
+
+@import 'styles/styles';
+
+@import'../styles/base';
+@import'../styles/layout';
+@import'../styles/modules';
