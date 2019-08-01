@@ -1,12 +1,11 @@
-@import 'variables';
-@import 'mixins';
+@import 'utilts/variables';
+@import 'utilts/mixins';
 @import 'icons';
+
 @import '~@angular/material/theming';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 @import 'base';
-@import 'layout';
 @import 'modules';
-@import 'components';
 
 @include mat-core();

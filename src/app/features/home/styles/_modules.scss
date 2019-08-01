@@ -1,0 +1,14 @@
+@import "utils/variables"; // inside
+
+.card-paragraph {
+  @include typography (18px, 30px, 50px, 300);
+  text-align: justify;
+}
+
+.mat-border {
+  margin: 50px;
+
+  &-color {
+    border-left: 2px solid blue;
+  } 
+}

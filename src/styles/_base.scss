@@ -1,9 +1,12 @@
-@import 'variables';
+@import 'utilts/variables';
 
-body,html {
+body {
   font-family: Roboto, Arial, sans-serif;
-  font-size: 40px;
   margin: 0;
   background-color: $white;
   height: 100vh;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,25 @@
+@import 'variables';
+
+@mixin typography ($size, $height, $padding, $font) {
+    font-size: $size;
+    line-height: $height;
+    padding: $padding;
+    font-weight: $font;
+}
+
+@mixin layout ($height, $padding, $margin) {
+  height: $height;
+  padding: $padding;
+  margin-bottom: $margin;
+}
+
+@mixin image ($imageUrl, $size) {
+  background-image: $imageUrl;
+  background-size: $size;
+}
+
+@mixin sticky ($top, $position, $index) {
+  top: $top;
+  position: $position;
+  z-index: $index;
+}

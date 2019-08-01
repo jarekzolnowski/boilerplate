@@ -1,8 +1,10 @@
-@import'../styles/mixins';
-@import'../styles/variables';
+// global and inside imports
 
-@import 'styles/styles';
+@import '../../../../styles/utilts/mixins'; // global
+@import '../../../../styles/icons'; // global
+@import "styles/utils/variables"; //inside
 
-@import'../styles/base';
-@import'../styles/layout';
-@import'../styles/modules';
+@import '../../../../styles/base'; // global
+@import 'styles/layout'; // inside
+@import 'styles/modules'; // inside
+@import '../../../../styles/modules'; // global

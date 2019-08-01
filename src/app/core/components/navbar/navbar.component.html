@@ -1,25 +1,25 @@
-<mat-toolbar class="menu" color="primary">
-  <mat-toolbar-row >
+<mat-toolbar class="menu menu-style">
+  <mat-toolbar-row>
     <mat-menu #appMenu="matMenu">
       <button mat-menu-item>Settings</button>
       <button mat-menu-item>Item 2</button>
     </mat-menu>
 
     <button mat-button [matMenuTriggerFor]="appMenu">
-      <mat-icon class="logo">developer_mode</mat-icon>
-        <span>Material</span>
+      <mat-icon>font_download</mat-icon>
+        <span >Material</span>
     </button>
     <button mat-button [matMenuTriggerFor]="appMenu">Components</button>
     <button mat-button [matMenuTriggerFor]="appMenu" fxHide.lt-lg="true">CDK</button>
     <button mat-button [matMenuTriggerFor]="appMenu" fxHide.lt-lg="true">Guides</button>
 
     <mat-menu #arrMenu="matMenu">
-      <button mat-menu-item>yyyyy</button>
+      <button mat-menu-item>item xy</button>
       <button mat-menu-item>Item 2</button>
     </mat-menu>
 
-    <span class="logo" fxFlex></span>
-    <button mat-button class="logo" [matMenuTriggerFor]="arrMenu" fxHide.lt-lg="true">
+    <span fxFlex></span>
+    <button mat-button [matMenuTriggerFor]="arrMenu" fxHide.lt-lg="true">
       <mat-menu #arrMenu="matMenu">
         <button mat-menu-item>5.2.5</button>
         <button mat-menu-item>6.4.7</button>
@@ -28,33 +28,19 @@
       </mat-menu>
         <span>8.0.2</span>
     </button>
-    <mat-icon class="logo" [matMenuTriggerFor]="arrMenu" fxHide.lt-lg="true">
-      <mat-menu #arrMenu="matMenu">
-        <button mat-menu-item>5.2.5</button>
-        <button mat-menu-item>6.4.7</button>
-        <button mat-menu-item>7.3.7</button>
-        <button mat-menu-item>8.0.1</button>
-      </mat-menu>
-      opacity
-    </mat-icon>
+    
+    <mat-icon matTooltip="Select a theme color">opacity</mat-icon>
 
     <button mat-button>
-      <mat-icon class="logo" fxHide.lt-lg="true">delete</mat-icon>
+      <mat-icon fxHide.lt-lg="true">account_circle</mat-icon>
         <span fxHide.md="true" fxHide.lt-md="true">GitHub</span>
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
 
-
-<mat-toolbar color="primary" class="toolbar" fxHide.lt-lg="true">
+<mat-toolbar class="toolbar toolbar-style" fxHide.lt-lg="true">
   <mat-toolbar-row>
     <mat-icon class="menu-burger" fxShow.lt-lg="true">menu</mat-icon>
     <span>Home</span>
-
-
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
-    </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>

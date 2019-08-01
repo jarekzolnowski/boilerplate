@@ -1,0 +1,23 @@
+@import '../styles/utils/variables';  // inside
+@import '../styles/utils/functions';  // inside
+@import "../../../../../styles/utilts/mixins"; // global
+
+.menu {
+  @include sticky (0, fixed, 999);
+  box-shadow: 0 4px 10px -2px $box-shadow;
+
+  &-style {
+    background-color: $darken-indigo;
+    color: $white;
+  }
+}
+
+.toolbar {
+  @include layout (200px, 70px, 5px);
+  font-size: 35px;
+
+  &-style {
+    background-color: $indigo-blue;
+    color: $white;
+  }  
+}

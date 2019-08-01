@@ -1,8 +1,8 @@
-@import'../styles/mixins';
-@import'../styles/variables';
+@import '../../../styles/utilts/mixins'; // global
+@import "styles/utils/variables"; //inside
 
-@import 'styles/styles';
-
-@import'../styles/base';
-@import'../styles/layout';
-@import'../styles/modules';
+@import '../../../styles/base'; // global
+@import '../../../styles/modules'; // global
+@import "styles/modules"; //inside
+@import "styles/components"; //inside
+@import "styles/state"; //inside

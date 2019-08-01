@@ -1,29 +1,39 @@
-<mat-tab-group class="title" fxFlex="80"  fxLayout="column no-wrap"  animationDuration="0ms">
+<mat-tab-group class="tab-title" fxFlex="80" fxLayout="column no-wrap" fxLayoutAlign="center center" animationDuration="0ms">
   <mat-tab label="OVERVIEW">
     <mat-card fxFlex fxLayout="column">
-      <mat-card-content class="title" fxFlex fxLayoutAlign="start center">
-        <p>
+      <mat-card-content class="card" fxFlex fxLayoutAlign="start center">
+        <p class="card-paragraph">
           <i>mat-card</i> is a content container for text, photos, and actions in the context of a single subject.
         </p>
       </mat-card-content>
 
-      <!-- Trochę małoznaczeniowa nazwa klasy example-card1 -->
-      <mat-card class="card-background" fxFlex>
+      <mat-card class="card card-background-color" fxFlex>
         <mat-card-header>
-          <mat-card-title>Basic cards</mat-card-title>
+          <mat-card-title class="card">
+              Basic card 
+          </mat-card-title>    
+
+          <span fxFlex></span>
+            <button mat-button>
+              <mat-icon>code</mat-icon>
+            </button>
+            
+            <button mat-button>
+              <mat-icon>launch</mat-icon>
+            </button>
         </mat-card-header>
 
         <mat-card-content>
-          <mat-card>Simple card</mat-card>
+          <mat-card class="card-paragraph">Simple card</mat-card>
         </mat-card-content>
       </mat-card>
 
-      <mat-card-header>
-        <mat-card-title class="title" >Basic cards</mat-card-title>
+      <mat-card-header class="card">
+        <mat-card-title>Basic cards</mat-card-title>
       </mat-card-header>
 
       <mat-card-content fxFlex>
-        <p>
+        <p class="card-paragraph">
           Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden,
           utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
         </p>
@@ -33,36 +43,36 @@
 
   <mat-tab label="API">
     <mat-card fxFlex fxLayout="column">
-      <mat-card-header>
-        <mat-card-title class="title">API reference for Angular Material card</mat-card-title>
+      <mat-card-header class="card">
+        <mat-card-title>API reference for Angular Material card</mat-card-title>
       </mat-card-header>
 
       <mat-card-content fxFlex>
-        <p>
+        <p class="card-paragraph">
           The most basic card needs only an <i>mat-card</i> element with some content. However, Angular Material provides a number of preset sections that you can use inside of an <i>mat-card</i>
         </p>
 
-        <mat-card-header>
-          <mat-card-title class="title">Directives
+        <mat-card-header class="card">
+          <mat-card-title>Directives
             <mat-divider></mat-divider>
           </mat-card-title>
         </mat-card-header>
 
-        <mat-card-title class="title" [ngStyle.xs]="{'font-weight':'900'}">MatCard
+        <mat-card-title class="card" [ngStyle.xs]="{'font-weight':'900'}">MatCard
         </mat-card-title>
 
-        <p>
+        <p class="card-paragraph">
           A basic content container component that adds the styles of a Material design card.
           While this component can be used alone, it also provides a number of preset styles for common card sections, including:
         </p>
-          <ul>
+          <ul class="card-paragraph">
             <li>mat-card-title</li>
             <li>mat-card-subtitle</li>
             <li>mat-card-content</li>
             <li>mat-card-actions</li>
             <li>mat-card-footer</li>
           </ul>
-        <p>
+        <p class="card-paragraph">
           The most basic card needs only an <i>mat-card</i> element with some content. However, Angular Material provides a number of preset sections that you can use inside of an <i>mat-card</i>
         </p>
       </mat-card-content>
@@ -71,8 +81,17 @@
 
   <mat-tab label="EXAMPLES">
     <mat-card fxFlex>
-      <mat-card-header>
-        <mat-card-title class="title">Basic cards</mat-card-title>
+      <mat-card-header class="card card-background-color">
+        <mat-card-title>Basic cards</mat-card-title>
+
+        <span fxFlex></span>
+            <button mat-button>
+              <mat-icon>code</mat-icon>
+            </button>
+            
+            <button mat-button>
+              <mat-icon>launch</mat-icon>
+            </button>
       </mat-card-header>
 
       <mat-card class="card">
@@ -85,7 +104,7 @@
           <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
 
         <mat-card-content>
-          <p>
+          <p class="card-paragraph">
             The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
             A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
             bred for hunting.
@@ -103,17 +122,20 @@
 
 <mat-card fxFlex="20">
   <mat-card-content fxHide.lt-lg="true">
-    <mat-list role="list">
-      <mat-list-item role="listitem">Contents</mat-list-item>
-      <mat-list-item role="listitem">Simple lists</mat-list-item>
-      <mat-list-item role="listitem">Navigation lists</mat-list-item>
-      <mat-list-item role="listitem">Action lists</mat-list-item>
-      <mat-list-item role="listitem">Section lists</mat-list-item>
-      <mat-list-item role="listitem">Multi-line lists</mat-list-item>
-      <mat-list-item role="listitem">List with icons</mat-list-item>
-      <mat-list-item role="listitem">List with avatars</mat-list-item>
-      <mat-list-item role="listitem">Dense lists</mat-list-item>
-      <mat-list-item role="listitem">Accesibility</mat-list-item>
-    </mat-list>
+      <mat-list  role="list">
+    <div class="mat-border mat-border-color ">
+      <a mat-button class="is-hover" href="https://tburleson-layouts-demos.firebaseapp.com/#/docs" routerLink=".">Link</a>
+      <a href="https://tburleson-layouts-demos.firebaseapp.com/#/docs"><mat-list-item class="is-hover" role="listitem">Contents</mat-list-item></a>
+      <mat-list-item class="is-hover" role="listitem">Simple lists</mat-list-item>
+      <mat-list-item class="is-hover" role="listitem">Navigation lists</mat-list-item>
+      <mat-list-item class="is-hover" role="listitem">Action lists</mat-list-item>
+      <mat-list-item class="is-hover" role="listitem">Section lists</mat-list-item>
+      <mat-list-item class="is-hover" role="listitem">Multi-line lists</mat-list-item>
+      <mat-list-item class="is-hover" role="listitem">List with icons</mat-list-item>
+      <mat-list-item class="is-hover" role="listitem">List with avatars</mat-list-item>
+      <mat-list-item class="is-hover" role="listitem">Dense lists</mat-list-item>
+      <mat-list-item class="is-hover" role="listitem">Accesibility</mat-list-item>
+  </div>
+</mat-list>
   </mat-card-content>
 </mat-card>
