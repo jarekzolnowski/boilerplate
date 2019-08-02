@@ -46,8 +46,7 @@ interface ExampleFlatNode {
 
 @Component({
   selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss'],
+  templateUrl: './sidebar.component.html'
 })
 export class SidebarComponent {
   @ViewChild('sidenav') sidenav: MatSidenav;

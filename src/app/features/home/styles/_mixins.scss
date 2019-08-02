@@ -1,0 +1,4 @@
+@mixin card-image ($imageUrl, $size) {
+  background-image: $imageUrl;
+  background-size: $size;
+}

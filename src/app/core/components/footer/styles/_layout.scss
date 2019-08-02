@@ -1,11 +1,10 @@
-@import '../../../../../styles/utilts/variables'; // global
-@import '../../../../../styles/utilts/mixins'; // global
+@import '../../../../../styles/_variables'; // global
+@import '../../../../../styles/_mixins'; // global
 
 .l-footer {
   @include layout (150px, 20px, 0);
 }
 
-.footer-background-color {
-  @extend .l-footer;
+.l-footer-indigo-blue {
   background-color: $indigo-blue;
 }

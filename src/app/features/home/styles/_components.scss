@@ -1,16 +1,22 @@
-@import "utils/variables"; // inside
+@import "variables"; // inside
+@import 'mixins'; //inside
 
-.tab-title {
+.c-tab-title {
   padding-top: 80px;
 }
-.card {
+.c-card {
   @include typography (25px, 30px, 30px, 500);
 
   &-background-color {
-    background-color: $gray-card-background;
-    box-shadow: 0 2px 10px -2px $card-box-shadow;
+    background-color: $home-gray-card-background;
+    box-shadow: 0 2px 10px -2px $home-card-box-shadow;
   }
 }
-.card-image {
-  @include image (url('https://material.angular.io/assets/img/examples/shiba1.jpg'), cover)
+.c-card-paragraph {
+  @include typography (18px, 30px, 50px, 300);
+  text-align: justify;
+}
+
+.c-card-image-shiba {
+  @include card-image (url('https://material.angular.io/assets/img/examples/shiba1.jpg'), cover)
 }

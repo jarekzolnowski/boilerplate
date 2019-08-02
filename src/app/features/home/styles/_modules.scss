@@ -1,14 +1,12 @@
-@import "utils/variables"; // inside
+@import "variables"; // inside
+@import "../../../../styles/variables"; //global
 
-.card-paragraph {
-  @include typography (18px, 30px, 50px, 300);
-  text-align: justify;
-}
-
-.mat-border {
+.boilerplate-border-l {
   margin: 50px;
+  border-left-width: 2px;
+  border-left-style: solid;
 
-  &-color {
-    border-left: 2px solid blue;
-  } 
+  &-color-blue {
+    border-left-color: $border-blue;
+  }
 }

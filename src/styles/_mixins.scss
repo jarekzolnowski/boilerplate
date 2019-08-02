@@ -1,3 +1,5 @@
+// global mixins
+
 @import 'variables';
 
 @mixin typography ($size, $height, $padding, $font) {
@@ -7,16 +9,12 @@
     font-weight: $font;
 }
 
-@mixin layout ($height, $padding, $margin) {
+@mixin layout ($height, $padding, $margin-bottom) {
   height: $height;
   padding: $padding;
-  margin-bottom: $margin;
+  margin-bottom: $margin-bottom;
 }
 
-@mixin image ($imageUrl, $size) {
-  background-image: $imageUrl;
-  background-size: $size;
-}
 
 @mixin sticky ($top, $position, $index) {
   top: $top;

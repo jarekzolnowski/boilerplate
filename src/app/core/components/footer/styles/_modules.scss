@@ -1,21 +1,19 @@
 // global imports
 
-@import '../../../../../styles/utilts/mixins';
-@import '../../../../../styles/utilts/variables';
-@import "utils/variables";
+@import '../../../../../styles/_mixins';
+@import '../../../../../styles/_variables';
+@import "variables";
 
-.footer-txt {
-  @include typography (26px, 20px, 0px, 600);
-  
-  &-color {
-    color: $white;
-  }
+.footer-md-text {
+  @include typography (26px, 20px, 0, 600);
+}
+.text-white {
+  color: $white;
 }
 
-.footer-smaller-txt {
-  @include typography (15px, 20px, 0px, 400);
-
-  &-color {
-    color: $footer-beige;
-  }
+.footer-sm-text {
+  @include typography (15px, 20px, 0, 400);
+}
+.text-beige {
+  color: $footer-beige;
 }
