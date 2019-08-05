@@ -4,10 +4,10 @@
 
 .c-navbar-menu {
   @include sticky (0, fixed, 999);
-  box-shadow: 0 4px 10px -2px $main-menu-box-shadow;
+  box-shadow: 0 4px 10px -2px $navbar-menu-box-shadow;
 }
 .c-navbar-menu-darken-indigo {
-  background-color: $main-menu-darken-indigo;
+  background-color: $navbar-menu-darken-indigo;
   color: $white;
 }
 
