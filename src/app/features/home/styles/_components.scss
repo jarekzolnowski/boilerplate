@@ -1,22 +1,25 @@
 @import "variables"; // inside
 @import 'mixins'; //inside
+@import "../../../../styles/mixins"; // global
 
-.c-tab-title {
-  padding-top: 80px;
-}
-.c-card {
-  @include typography (25px, 30px, 30px, 500);
 
-  &-background-color {
-    background-color: $home-gray-card-background;
-    box-shadow: 0 2px 10px -2px $home-card-box-shadow;
+.c-home {
+  .tab-title-md-text {
+    padding: 50px;
   }
-}
-.c-card-paragraph {
-  @include typography (18px, 30px, 50px, 300);
-  text-align: justify;
-}
+  .card-md-text {
+     @include typography (25px, 30px, 30px, 500);
 
-.c-card-image-shiba {
-  @include card-image (url('https://material.angular.io/assets/img/examples/shiba1.jpg'), cover)
+    &-gray-shadow {
+      background-color: $home-card-background-light-gray;
+      box-shadow: 0 2px 10px -2px $home-card-box-shadow-flint-gray;
+    }
+  }
+  .card-sm-text {
+    @include typography (18px, 30px, 50px, 300);
+    text-align: justify;
+  }
+  .card-image-shiba {
+    @include home-card-image (url('https://material.angular.io/assets/img/examples/shiba1.jpg'), cover);
+  }
 }

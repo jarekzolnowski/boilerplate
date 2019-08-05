@@ -3,10 +3,10 @@
 @import 'variables';
 
 @mixin typography ($size, $height, $padding, $font) {
-    font-size: $size;
-    line-height: $height;
-    padding: $padding;
-    font-weight: $font;
+  font-size: $size;
+  line-height: $height;
+  padding: $padding;
+  font-weight: $font;
 }
 
 @mixin layout ($height, $padding, $margin-bottom) {
@@ -20,4 +20,10 @@
   top: $top;
   position: $position;
   z-index: $index;
+}
+
+@mixin border-l ($margin, $border-left-width, $border-left-style) {
+  margin: $margin;
+  border-left-width: $border-left-width;
+  border-left-style: $border-left-style;
 }

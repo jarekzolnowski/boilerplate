@@ -1,12 +1,7 @@
-@import "variables"; // inside
-@import "../../../../styles/variables"; //global
+@import "../../../../styles/modules"; //global
+@import "../../../../styles/variables"; // global
 
-.boilerplate-border-l {
-  margin: 50px;
-  border-left-width: 2px;
-  border-left-style: solid;
-
-  &-color-blue {
-    border-left-color: $border-blue;
-  }
+.home-border-l-list-items-blue {
+  @extend .border-l-list-items;
+  border-left-color: $border-blue;
 }

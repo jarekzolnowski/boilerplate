@@ -1,5 +1,6 @@
 @import "variables";
+@import "../../../../styles/variables";
 
-.home-is-hover:hover {
-    color: $home-gray-font;
+.is-hover-home-list-items:hover {
+    color: $gray-font;
 }

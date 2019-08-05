@@ -1,20 +1,21 @@
 @import 'variables';  // inside
 @import "../../../../../styles/_mixins"; // global
+@import "../../../../../styles/variables"; // global
 
-.c-menu {
+.c-navbar-menu {
   @include sticky (0, fixed, 999);
-  box-shadow: 0 4px 10px -2px $menu-box-shadow;
+  box-shadow: 0 4px 10px -2px $main-menu-box-shadow;
 }
-.c-menu-darken-indigo {
-  background-color: $menu-darken-indigo;
+.c-navbar-menu-darken-indigo {
+  background-color: $main-menu-darken-indigo;
   color: $white;
 }
 
-.c-toolbar {
+.c-navbar-toolbar {
   @include layout (200px, 70px, 5px);
   font-size: 35px;
 }
-.c-toolbar-indigo-blue {
+.c-navbar-toolbar-indigo-blue {
   background-color: $indigo-blue;
   color: $white;
 }

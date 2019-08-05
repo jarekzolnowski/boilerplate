@@ -7,13 +7,14 @@
 .footer-md-text {
   @include typography (26px, 20px, 0, 600);
 }
-.text-white {
-  color: $white;
+.footer-text-ivory-white {
+  color: $footer-text-ivory-white;
 }
 
 .footer-sm-text {
   @include typography (15px, 20px, 0, 400);
 }
-.text-beige {
-  color: $footer-beige;
+.footer-text-beige {
+  color: $footer-text-beige;
 }
+
